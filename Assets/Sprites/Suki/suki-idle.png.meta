@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: be7b398405d96774ca15fbe38e13129d
+guid: 2b8378949726d9c43b2ce26a7caa412e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 15
+  spritePixelsToUnits: 90
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -116,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SPRITES-ENEMIGO CAMINANDO_0
+      name: suki-idle_0
       rect:
         serializedVersion: 2
-        x: 75
-        y: 76
-        width: 106
-        height: 176
+        x: 27
+        y: 33
+        width: 76
+        height: 187
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,83 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ffeaa4f2661104b4e85da4c00af20ea0
-      internalID: 220716723
+      spriteID: a87614858d5872e428c1d6ae6847fd20
+      internalID: 132765142
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPRITES-ENEMIGO CAMINANDO_1
+      name: suki-idle_1
       rect:
         serializedVersion: 2
-        x: 304
-        y: 73
-        width: 95
-        height: 179
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 57b3baf01dab1264aa662e57446f77f6
-      internalID: 161384518
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SPRITES-ENEMIGO CAMINANDO_2
-      rect:
-        serializedVersion: 2
-        x: 550
-        y: 73
-        width: 69
-        height: 179
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e7df5525c45938a4a9938270fc12e9ab
-      internalID: -1685732969
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SPRITES-ENEMIGO CAMINANDO_3
-      rect:
-        serializedVersion: 2
-        x: 803
-        y: 75
-        width: 88
-        height: 177
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 36bfe38a010d90b4990dc449c328a8ab
-      internalID: 72559670
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SPRITES-ENEMIGO CAMINANDO_4
-      rect:
-        serializedVersion: 2
-        x: 1091
-        y: 76
+        x: 141
+        y: 32
         width: 77
-        height: 176
+        height: 189
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -214,8 +151,113 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c29d80075eee5b943bf4e6470b049ea3
-      internalID: -1814280434
+      spriteID: b4f22c3fbf39031488bca8a50e28efec
+      internalID: -132495268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: suki-idle_2
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 31
+        width: 77
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4333c9081e76644482f21d6b6351133
+      internalID: -1209691148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: suki-idle_3
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 32
+        width: 76
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f76a3e7d0135dd54b94cfe3865195020
+      internalID: -1304987718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: suki-idle_4
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 32
+        width: 76
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b32b473da1619994d90be58d4fad76cd
+      internalID: -2041405704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: suki-idle_5
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 32
+        width: 77
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88b2389d67b501247b4e3e5d83723fe7
+      internalID: 108805701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: suki-idle_6
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 32
+        width: 77
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a06b202e886f5e4bb118a94e95df24b
+      internalID: -1412140324
       vertices: []
       indices: 
       edges: []
@@ -231,11 +273,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      SPRITES-ENEMIGO CAMINANDO_4: -1814280434
-      SPRITES-ENEMIGO CAMINANDO_1: 161384518
-      SPRITES-ENEMIGO CAMINANDO_2: -1685732969
-      SPRITES-ENEMIGO CAMINANDO_3: 72559670
-      SPRITES-ENEMIGO CAMINANDO_0: 220716723
+      suki-idle_5: 108805701
+      suki-idle_0: 132765142
+      suki-idle_1: -132495268
+      suki-idle_4: -2041405704
+      suki-idle_3: -1304987718
+      suki-idle_6: -1412140324
+      suki-idle_2: -1209691148
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

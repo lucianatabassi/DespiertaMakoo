@@ -185,7 +185,8 @@ public class MakoNivel2 : MonoBehaviour
        NuevoSonido(HeridaSonido[0], 1f);
         gameObject.GetComponent <Animator>().SetBool("herida", true);
          if (puntosVidaPlayer <=0) {
-            Destroy(gameObject);
+            anim.SetTrigger("muerta");
+            //Destroy(gameObject);
         }
 
 

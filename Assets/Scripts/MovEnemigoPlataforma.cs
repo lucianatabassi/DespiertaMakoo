@@ -80,7 +80,7 @@ public float tiempoDisparoE;
         //transform.position += transform.right * velBala * Time.deltaTime;
         tiempoDisparoE += Time.deltaTime;
 
-        if (tiempoDisparoE >= 2)
+        if (tiempoDisparoE >= 0.5)
         
     {
         GameObject prefab = Instantiate(bullet, ShootPos.position, transform.rotation) as GameObject;

@@ -24,19 +24,21 @@ public class PlayerControler : MonoBehaviour
     public int cantEnergia;
     public GameObject[] Barras;
 
-    public Animator anim;
-    public bool isAttacking = false;
+    [HideInInspector] public Animator anim;
+    [HideInInspector] public bool isAttacking = false;
     public static PlayerControler scriptMako;
 
+    private bool disparando = true;
+
+    
     [Header("Sonidos")]
     public GameObject DisparoSonido;
     public GameObject PUSonido;
     public GameObject SaltoSonido;
     public GameObject[] HeridaSonido;
 
-    //VideoPlayer cinematica;
-    //Cinematica
-       public Animator transition; 
+
+    [HideInInspector] public Animator transition; 
        public float transitionTime = 1f;
 
     private void Awake() { // para acceder al script desde cualquier parte
@@ -52,11 +54,10 @@ public class PlayerControler : MonoBehaviour
         anim = GetComponent<Animator>();
         puntosVidaPlayer = vidaMaxPlayer;
         rb2D = GetComponent<Rigidbody2D>(); // mete el componente rigidbody dentro de la variable
-       // cinematica = GetComponent<VideoPlayer>();
        
         
         nivelEnergia.GetComponent<Image>().color = new Color (0, 240, 255 );
-        //energia.GetComponent<Image>().color = new Color (0, 240, 255  );
+        
 
         // BARRITAS DE ENERGIA
     for (int i = 0; i < cantEnergia; i++) {
@@ -176,15 +177,27 @@ public class PlayerControler : MonoBehaviour
            
     }
 
+    
+    if(Input.GetKey("mouse 0") && disparando ) 
+    {
+        Disparar();
+    
+    } 
 
-    if (Input.GetKey("mouse 0")) { //dispara con el mouse
+    if (Input.GetKey("mouse 0") && !disparando)
+    {
+         Ataque();
+    }
+
+ 
+  /*  if (Input.GetKey("mouse 0")) { //dispara con el mouse
         gameObject.GetComponent <Animator>().SetBool("shoot", true);
         gameObject.GetComponent <Animator>().SetBool("fight", false);
         anim.SetBool("crouch", false);
       
-    }
+    }*/
    
-    if (Input.GetKeyDown ("mouse 0")) { //dispara con el mouse
+    if (Input.GetKeyDown ("mouse 0") && disparando) { //dispara con el mouse
         if (cantEnergia > 0 ) { 
             GameObject prefab = Instantiate(Bullet, PuntoDisparo.position, transform.rotation) as GameObject; // crea objeto en base a la rotacion           
                 cantEnergia -= 1;        
@@ -198,12 +211,7 @@ public class PlayerControler : MonoBehaviour
 
 
 
-   /* if (cantEnergia <=0) { //si no tiene energia, no dispara
-        Destroy(energia);
-       
-    }*/
-
-        Ataque();
+        
     /*if (Input.GetKeyDown ("mouse 1")) { // con boton derecho del mouse pelea
 
         
@@ -235,19 +243,25 @@ public class PlayerControler : MonoBehaviour
     
     }
 
+     void Disparar() {
+       
+        anim.SetBool("shoot", true);
+    }
+
+
     void Ataque() {
-        if (Input.GetKeyDown ("mouse 1") && !isAttacking) {
+        if ( !isAttacking) {
+            disparando = false;
             isAttacking = true;
+           
         }
     }
 
 
 
-
    private void OnTriggerEnter2D (Collider2D col) { //cuando collider entra en contacto con otro collider
 
-
-        //JUNTAR BALAS (ENERGIA)
+      //JUNTAR BALAS (ENERGIA)
        if (col.gameObject.tag == "balas" && cantEnergia < 8 ) {
               Destroy(col.gameObject);
     
@@ -259,9 +273,9 @@ public class PlayerControler : MonoBehaviour
         Barras [i].gameObject.SetActive(true);
 
     } 
-
-    
+   
        } 
+
 
        if (col.gameObject.tag == "balas" && cantEnergia == 8) {
         Destroy(col.gameObject);
@@ -270,10 +284,18 @@ public class PlayerControler : MonoBehaviour
               NuevoSonido(PUSonido, 1f);
 
 
-    for (int i = 0; i < cantEnergia; i++) {
+         for (int i = 0; i < cantEnergia; i++) {
         Barras [i].gameObject.SetActive(true);
 
     } 
+       }
+
+
+       if (col.gameObject.tag == "MomentoPelea")
+       {                    
+            disparando = false;
+            
+            
        }
 
        
@@ -302,12 +324,13 @@ public class PlayerControler : MonoBehaviour
     }
 
 
-    public void TakeHit (float golpe) { // personaje pierde vida
+    public void TakeHit (float golpe) { // daño de enemigos
         puntosVidaPlayer -= golpe;
        NuevoSonido(HeridaSonido[0], 1f);
         gameObject.GetComponent <Animator>().SetBool("hurt", true);
          if (puntosVidaPlayer <=0) {
-            Destroy(gameObject);
+            anim.SetTrigger("dead");
+            //Destroy(gameObject);
         }
 
 

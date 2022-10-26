@@ -117,7 +117,7 @@ public class Enemigo1 : MonoBehaviour
         //transform.position += transform.right * velBala * Time.deltaTime;
         tiempoDisparoE += Time.deltaTime;
 
-        if (tiempoDisparoE >= 2)
+        if (tiempoDisparoE >= 1)
     {
        GameObject prefab = Instantiate(LaBala, PuntoDisparo.position, transform.rotation) as GameObject;
         tiempoDisparoE = 0;
@@ -147,7 +147,7 @@ public class Enemigo1 : MonoBehaviour
     public void TakeHit(float golpe)
     {
         PuntosVidaE -= golpe;
-         gameObject.GetComponent <Animator>().SetBool("enemyHurt", true);
+         gameObject.GetComponent <Animator>().SetTrigger("enemyHurt");
          NuevoSonido(SonidoEnemigoHerido[0], 1f);
         if(PuntosVidaE <= 0 )
         {

@@ -10,6 +10,7 @@ public class SukiNuevo : MonoBehaviour
     [SerializeField] private BoxCollider2D boxCollider;
     [SerializeField] private float colliderDist;
     [SerializeField] private LayerMask makoLayer;
+    public Transform mako_pos;
      private float coolDownTimer = Mathf.Infinity;
 
      private Animator anim;
@@ -24,6 +25,7 @@ public class SukiNuevo : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         enemyPatrol = GetComponentInParent<SukiPatrol>();
+        mako_pos = GameObject.Find("Personaje").transform;
     }
 
 
@@ -37,6 +39,7 @@ public class SukiNuevo : MonoBehaviour
         {
             coolDownTimer = 0;
             anim.SetTrigger("pelear");
+            //Flip();
              //anim.SetBool("caminar", false);
             Debug.Log("aaa");
             //Ataque();
@@ -55,9 +58,24 @@ public class SukiNuevo : MonoBehaviour
     {
         RaycastHit2D hit = Physics2D.BoxCast (boxCollider.bounds.center + transform.right * rango * transform.localScale.x * colliderDist, new Vector3(boxCollider.bounds.size.x * rango, boxCollider.bounds.size.y, boxCollider.bounds.size.z ), 0, Vector2.left, 0, makoLayer );
 
-        
+       
         return hit.collider != null;
     }
+
+  /*  private void Flip() 
+    {
+         if(mako_pos.position.x>this.transform.position.x)
+       {
+
+            this.transform.eulerAngles = new Vector3 (0, 180, 0);
+
+    } else {
+ 
+            this.transform.eulerAngles = new Vector3 (0, 0, 0);
+    }
+
+
+    }*/
 
     private void OnDrawGizmos()
     {
