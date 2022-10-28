@@ -49,7 +49,6 @@ public class PlayerControler : MonoBehaviour
  
     void Start()
     {
-        //DontDestroyOnLoad(gameObject);
 
         anim = GetComponent<Animator>();
         puntosVidaPlayer = vidaMaxPlayer;
@@ -89,7 +88,8 @@ public class PlayerControler : MonoBehaviour
        transform.eulerAngles = new Vector3 (0,180, 0); // para voltear al personaje             
     } 
 
-    if (Input.GetKey("a") && Input.GetKey("space") ) {
+    if (Input.GetKey("a") && Input.GetKey("space") ) 
+    {
         gameObject.GetComponent <Animator>().SetBool("jump", true);
     }
    
@@ -158,6 +158,8 @@ public class PlayerControler : MonoBehaviour
         anim.SetBool("falling", false);
     }
 
+
+
     if (Input.GetKey(KeyCode.LeftControl)) // agacharse
     {
         anim.SetBool("crouch", true);
@@ -202,7 +204,7 @@ public class PlayerControler : MonoBehaviour
             GameObject prefab = Instantiate(Bullet, PuntoDisparo.position, transform.rotation) as GameObject; // crea objeto en base a la rotacion           
                 cantEnergia -= 1;        
                 NuevoSonido(DisparoSonido, 1f);
-               Destroy(prefab, 2f);
+               Destroy(prefab, 1.5f);
         } 
         
         Barras [cantEnergia].gameObject.SetActive(false);
@@ -294,11 +296,8 @@ public class PlayerControler : MonoBehaviour
        if (col.gameObject.tag == "MomentoPelea")
        {                    
             disparando = false;
-            
-            
-       }
-
-       
+                      
+       }     
     }
 
     private void OnCollisionEnter2D (Collision2D collision) { // verificar q colisionamos con la plataforma cuando se mueve
