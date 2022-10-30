@@ -36,6 +36,7 @@ public class PlayerControler : MonoBehaviour
     public GameObject PUSonido;
     public GameObject SaltoSonido;
     public GameObject[] HeridaSonido;
+    //public GameObject PeleaSonido;
 
 
     [HideInInspector] public Animator transition; 
@@ -189,7 +190,9 @@ public class PlayerControler : MonoBehaviour
     if (Input.GetKey("mouse 0") && !disparando)
     {
          Ataque();
-    }
+         //NuevoSonido(PeleaSonido, 3f);
+        
+    } 
 
  
   /*  if (Input.GetKey("mouse 0")) { //dispara con el mouse
@@ -255,6 +258,8 @@ public class PlayerControler : MonoBehaviour
         if ( !isAttacking) {
             disparando = false;
             isAttacking = true;
+
+            
            
         }
     }
@@ -297,7 +302,9 @@ public class PlayerControler : MonoBehaviour
        {                    
             disparando = false;
                       
-       }     
+       }    
+
+     
     }
 
     private void OnCollisionEnter2D (Collision2D collision) { // verificar q colisionamos con la plataforma cuando se mueve
@@ -312,6 +319,8 @@ public class PlayerControler : MonoBehaviour
         
     }
 
+    
+        
 
     }
 

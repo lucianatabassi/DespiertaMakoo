@@ -16,6 +16,7 @@ TagManager:
   - enemigo3
   - golpes
   - MomentoPelea
+  - suki
   layers:
   - Default
   - TransparentFX

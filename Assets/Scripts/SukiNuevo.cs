@@ -92,7 +92,29 @@ public class SukiNuevo : MonoBehaviour
             
         }
 
+        if (trig.gameObject.tag == "golpes")
+            {
+                anim.SetTrigger("herida");
+            }
+
 }
+
+        void OnCollisionEnter2D (Collision2D col) 
+        {
+            if (col.gameObject.tag == "Player")
+            {
+                anim.SetTrigger("herida");
+            }
+            
+        }
+
+/*public void TakeHit(float golpe)
+    {
+        
+        anim.SetTrigger("herida");
+         //NuevoSonido(SonidoEnemigoHerido[0], 1f);
+        
+    }*/
 
  void NuevoSonido (GameObject prefab, float duracion = 5f) {
          Destroy (Instantiate(prefab), duracion);

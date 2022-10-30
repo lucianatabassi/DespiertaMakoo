@@ -26,10 +26,10 @@ public class SukiPatrol : MonoBehaviour
         escalaInicial = suki.localScale; // guarda la pos inicial de suki
     }
 
-    private void OnDisable() 
+   /* private void OnDisable() 
     {
         anim.SetBool("caminar", false);
-    }
+    }*/
 
     private void Update()
     {
