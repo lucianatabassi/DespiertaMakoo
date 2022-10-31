@@ -2246,6 +2246,7 @@ MonoBehaviour:
   HeridaSonido:
   - {fileID: 2991186030391171433, guid: e1cc677dc89ef94498f196f186424804, type: 3}
   - {fileID: 3699374773659806919, guid: 8e3d4535df452804f85fc35459ffa9ef, type: 3}
+  PeleaMusica: {fileID: 0}
   transition: {fileID: 0}
   transitionTime: 1
 --- !u!1 &376002565

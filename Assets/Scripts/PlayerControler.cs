@@ -36,7 +36,7 @@ public class PlayerControler : MonoBehaviour
     public GameObject PUSonido;
     public GameObject SaltoSonido;
     public GameObject[] HeridaSonido;
-    //public GameObject PeleaSonido;
+    public GameObject PeleaMusica;
 
 
     [HideInInspector] public Animator transition; 
@@ -301,8 +301,14 @@ public class PlayerControler : MonoBehaviour
        if (col.gameObject.tag == "MomentoPelea")
        {                    
             disparando = false;
+            
                       
        }    
+
+       if (col.gameObject.tag == "Musica") 
+       {
+         NuevoSonido(PeleaMusica, 60f);
+       }
 
      
     }

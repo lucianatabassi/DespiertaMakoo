@@ -17,6 +17,7 @@ TagManager:
   - golpes
   - MomentoPelea
   - suki
+  - Musica
   layers:
   - Default
   - TransparentFX

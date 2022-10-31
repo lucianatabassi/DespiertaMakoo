@@ -5,7 +5,7 @@ using UnityEngine;
 public class SukiNuevo : MonoBehaviour
 {
     [SerializeField] private float ataqueCooldown;
-    [SerializeField] private int daño;
+    [SerializeField] private float daño;
     [SerializeField] private int rango;
     [SerializeField] private BoxCollider2D boxCollider;
     [SerializeField] private float colliderDist;

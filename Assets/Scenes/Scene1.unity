@@ -299,7 +299,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.5}
+  m_Size: {x: 1, y: 0.47}
   m_EdgeRadius: 0
 --- !u!212 &51555870
 SpriteRenderer:
@@ -361,7 +361,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 51555868}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.9901, y: -3.5548, z: 0}
+  m_LocalPosition: {x: 12.99, y: -3.43, z: 0}
   m_LocalScale: {x: 124.73, y: 2.4328485, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1303,11 +1303,11 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: e234c3dc862cddb48bd7815ecbeb28a2, type: 3}
     - target: {fileID: 7094842629639648177, guid: 2bd85746dde16c34790dbfb0a7ec1865, type: 3}
       propertyPath: m_Size.x
-      value: 1.55
+      value: 1.67
       objectReference: {fileID: 0}
     - target: {fileID: 7094842629639648177, guid: 2bd85746dde16c34790dbfb0a7ec1865, type: 3}
       propertyPath: m_Size.y
-      value: 0.25
+      value: 0.21
       objectReference: {fileID: 0}
     - target: {fileID: 7094842629639648177, guid: 2bd85746dde16c34790dbfb0a7ec1865, type: 3}
       propertyPath: m_Material
@@ -1694,6 +1694,7 @@ MonoBehaviour:
   HeridaSonido:
   - {fileID: 2991186030391171433, guid: e1cc677dc89ef94498f196f186424804, type: 3}
   - {fileID: 3699374773659806919, guid: 8e3d4535df452804f85fc35459ffa9ef, type: 3}
+  PeleaMusica: {fileID: 6188355485279558778, guid: baa38f35c117d2046a477bb7ad8b208d, type: 3}
   transition: {fileID: 0}
   transitionTime: 1
 --- !u!61 &373972636
@@ -2127,7 +2128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ataqueCooldown: 0.5
-  "da\xF1o": 1
+  "da\xF1o": 0.5
   rango: 3
   boxCollider: {fileID: 494584994}
   colliderDist: 0.5
@@ -2728,6 +2729,64 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 620237358}
   m_CullTransparentMesh: 1
+--- !u!1 &622695198
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 622695199}
+  - component: {fileID: 622695200}
+  m_Layer: 19
+  m_Name: CheckPoinMusica
+  m_TagString: Musica
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &622695199
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 622695198}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -13.87, y: -1.2234291, z: 0.030100435}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1279138255}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &622695200
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 622695198}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -3.76, y: 0.92}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.1, y: 8.48}
+  m_EdgeRadius: 0
 --- !u!4 &637417091 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7094842629639648142, guid: 2bd85746dde16c34790dbfb0a7ec1865, type: 3}
@@ -3037,7 +3096,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 766445924}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.2867355, y: -1.2234291, z: 0.030100435}
+  m_LocalPosition: {x: -3.2, y: -1.2234291, z: 0.030100435}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4732,6 +4791,7 @@ Transform:
   m_Children:
   - {fileID: 990110413}
   - {fileID: 766445927}
+  - {fileID: 622695199}
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
