@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: cc1682721e440c247872faf836fa445f
+guid: 4b989f55975196c468dccbed53211ed0
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 580
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -116,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: enemigo1_0
+      name: enemigo2caminando_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 387
-        width: 57
-        height: 65
+        x: 1349
+        y: 22
+        width: 680
+        height: 1282
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30ac7623c6546134893e7e2bac28d7ec
-      internalID: 918954529
+      spriteID: f9ae88bc4a3efe84989b71c8bbaa24fc
+      internalID: 899194721
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemigo1_1
+      name: enemigo2caminando_1
       rect:
         serializedVersion: 2
-        x: 92
-        y: 387
-        width: 59
-        height: 65
+        x: 4550
+        y: 1303
+        width: 5
+        height: 5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -151,20 +151,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ef4d2657ad3fe34e8b6100272a32d2f
-      internalID: -1755506078
+      spriteID: 6f0a3ff192873114091e8a6ad945f85c
+      internalID: -68675550
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemigo1_2
+      name: enemigo2caminando_2
       rect:
         serializedVersion: 2
-        x: 174
-        y: 387
-        width: 58
-        height: 65
+        x: 400
+        y: 34
+        width: 720
+        height: 1258
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -172,20 +172,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fb5ee81a41690ff4db624cf4f235e0fe
-      internalID: 1616288545
+      spriteID: a8432bd9f1c43044989a5eb698c19997
+      internalID: -601388999
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemigo1_3
+      name: enemigo2caminando_3
       rect:
         serializedVersion: 2
-        x: 256
-        y: 387
-        width: 56
-        height: 65
+        x: 2206
+        y: 930
+        width: 6
+        height: 4
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,20 +193,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b188962908473604e9aee3afcce303a3
-      internalID: 2092154149
+      spriteID: 2c56bb0978800584db37dbfd4065757e
+      internalID: -1728540496
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemigo1_4
+      name: enemigo2caminando_4
       rect:
         serializedVersion: 2
-        x: 338
-        y: 387
-        width: 54
-        height: 65
+        x: 2419
+        y: 28
+        width: 489
+        height: 1273
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -214,20 +214,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c7987ed24e5fe4f4084299c6f02696b2
-      internalID: -765915545
+      spriteID: 1929d02d4aa4069439dff5f8094a2cdc
+      internalID: 359744814
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemigo1_5
+      name: enemigo2caminando_5
       rect:
         serializedVersion: 2
-        x: 415
-        y: 387
-        width: 57
-        height: 65
+        x: 3268
+        y: 37
+        width: 610
+        height: 1258
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -235,20 +235,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4073b1b6c8618c341839a0bf1827660e
-      internalID: 660671748
+      spriteID: 8c6e8b3a008ff1a4ab91db5645ddf258
+      internalID: 1243706974
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemigo1_6
+      name: enemigo2caminando_6
       rect:
         serializedVersion: 2
-        x: 494
-        y: 387
-        width: 58
-        height: 65
+        x: 4272
+        y: 33
+        width: 425
+        height: 1268
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -256,418 +256,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 35a493a1967fb3540b03be7a00a94bfd
-      internalID: -550537090
+      spriteID: fbd3d343a0276f74fa08d45540a54e02
+      internalID: 178193990
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemigo1_7
+      name: enemigo2caminando_7
       rect:
         serializedVersion: 2
-        x: 572
-        y: 387
-        width: 58
-        height: 65
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1ae523011a8915a47ad1921257d2aa63
-      internalID: -1655601654
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: enemigo1_8
-      rect:
-        serializedVersion: 2
-        x: 19
-        y: 288
-        width: 49
-        height: 67
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c3eb2f7e20ea7d44ab58c2047e1defae
-      internalID: 89088123
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: enemigo1_9
-      rect:
-        serializedVersion: 2
-        x: 92
-        y: 289
-        width: 55
-        height: 67
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4adc0691d613b0642ade5a007bbebd90
-      internalID: 79116332
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: enemigo1_10
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 289
-        width: 51
-        height: 67
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5ef7d8b62bb90da48b7219828f7a40cf
-      internalID: -1782034821
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: enemigo1_11
-      rect:
-        serializedVersion: 2
-        x: 262
-        y: 287
-        width: 39
-        height: 69
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5815c41fef418be46a76c78098e33753
-      internalID: -121762408
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: enemigo1_12
-      rect:
-        serializedVersion: 2
-        x: 341
-        y: 288
-        width: 36
-        height: 68
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b136775851bf5294da7cd8980cc38e98
-      internalID: 668387683
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: enemigo1_13
-      rect:
-        serializedVersion: 2
-        x: 417
-        y: 289
-        width: 39
-        height: 67
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 12d3ec768f1f3a94eaa00455a910b6a0
-      internalID: 1365762537
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: enemigo1_14
-      rect:
-        serializedVersion: 2
-        x: 22
-        y: 194
-        width: 54
-        height: 67
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7d978dd1e0009a8468bf9df3ad507820
-      internalID: 1640312993
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: enemigo1_15
-      rect:
-        serializedVersion: 2
-        x: 102
-        y: 196
-        width: 54
-        height: 67
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 31bfb999417f7514897afb04d7ee2f84
-      internalID: 1431158126
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: enemigo1_16
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 197
-        width: 59
-        height: 66
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f44402cc3a208434ba35e6d3822f40b0
-      internalID: 1167099175
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: enemigo1_17
-      rect:
-        serializedVersion: 2
-        x: 261
-        y: 196
-        width: 54
-        height: 67
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1d65ca417baafab44bba3e2b188a69a3
-      internalID: 1765260959
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: enemigo1_18
-      rect:
-        serializedVersion: 2
-        x: 340
-        y: 197
-        width: 55
-        height: 66
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5efbb2014caeb92499cb9727addd2ad8
-      internalID: 1117342082
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: enemigo1_19
-      rect:
-        serializedVersion: 2
-        x: 415
-        y: 198
-        width: 59
-        height: 65
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d8a9f1ed941a63b48af54fd46ec49cb1
-      internalID: -831219250
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: enemigo1_20
-      rect:
-        serializedVersion: 2
-        x: 10
-        y: 107
-        width: 65
-        height: 65
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b45b4318e92b9df4385cb5c9fc12a6eb
-      internalID: -1388923191
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: enemigo1_21
-      rect:
-        serializedVersion: 2
-        x: 92
-        y: 108
-        width: 66
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7e9c020e21d4ca84fb97c5a952ed43fd
-      internalID: -1657337081
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: enemigo1_22
-      rect:
-        serializedVersion: 2
-        x: 173
-        y: 115
-        width: 66
-        height: 58
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0092695c2b920024fbfd90f42c59960c
-      internalID: -1092379021
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: enemigo1_23
-      rect:
-        serializedVersion: 2
-        x: 276
-        y: 107
-        width: 47
-        height: 73
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aa223fd43aa63b54e9d6d1046d8c29d7
-      internalID: 976199329
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: enemigo1_24
-      rect:
-        serializedVersion: 2
-        x: 343
-        y: 108
-        width: 52
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: efc16c65e4b968f428d358e898462290
-      internalID: -1607504373
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: enemigo1_25
-      rect:
-        serializedVersion: 2
-        x: 413
-        y: 116
-        width: 81
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 853ac82abfddc1e4986c32a2818cba7f
-      internalID: 897526990
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: enemigo1_26
-      rect:
-        serializedVersion: 2
-        x: 504
-        y: 107
-        width: 81
+        x: 1081
+        y: 611
+        width: 18
         height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -676,20 +277,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5e29668be215dc7419d494c06c061423
-      internalID: 2065980268
+      spriteID: 34406ef0c900c764ab0fadd78814ef1a
+      internalID: -1792487095
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemigo1_27
+      name: enemigo2caminando_8
       rect:
         serializedVersion: 2
-        x: 22
-        y: 17
-        width: 60
-        height: 56
+        x: 1996
+        y: 570
+        width: 15
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -697,20 +298,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3075eafc7d41850468d286e7b1591d2c
-      internalID: -1785121371
+      spriteID: 66fe4b40ece0d344285c37fc19b84e89
+      internalID: 1160099563
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemigo1_28
+      name: enemigo2caminando_9
       rect:
         serializedVersion: 2
-        x: 97
-        y: 18
-        width: 61
-        height: 56
+        x: 2001
+        y: 525
+        width: 5
+        height: 5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -718,8 +319,239 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d88e0f36afb79734db9f98276aaf7453
-      internalID: 286662948
+      spriteID: 0a9dc864e0a9f244faccecfd4c7999f6
+      internalID: 229240801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo2caminando_10
+      rect:
+        serializedVersion: 2
+        x: 2887
+        y: 523
+        width: 13
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbb3dcd5e688ed140b3bc73ca1dad9da
+      internalID: -824386715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo2caminando_11
+      rect:
+        serializedVersion: 2
+        x: 4765
+        y: 483
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 589c3df6e5f4f664c8e709493b33e0a9
+      internalID: 1211790112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo2caminando_12
+      rect:
+        serializedVersion: 2
+        x: 2435
+        y: 281
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4834aaed17309f04e85f12e9ef32114f
+      internalID: 1080162493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo2caminando_13
+      rect:
+        serializedVersion: 2
+        x: 2434
+        y: 187
+        width: 4
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 402df768dffcbb6459bb3e07a0938dc3
+      internalID: -347129942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo2caminando_14
+      rect:
+        serializedVersion: 2
+        x: 4743
+        y: 185
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eba702d5ab577184f9ee8b55a8b26c6e
+      internalID: 1355145565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo2caminando_15
+      rect:
+        serializedVersion: 2
+        x: 1336
+        y: 122
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00af743e26bec784791361cde4ed17d9
+      internalID: -1131991993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo2caminando_16
+      rect:
+        serializedVersion: 2
+        x: 4774
+        y: 112
+        width: 46
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65187e2bcacded34fa961ced7784cc85
+      internalID: 1922948950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo2caminando_17
+      rect:
+        serializedVersion: 2
+        x: 1348
+        y: 98
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6d6482337b861a4a90a23c4b05ada58
+      internalID: -1667191922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo2caminando_18
+      rect:
+        serializedVersion: 2
+        x: 3253
+        y: 100
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9792de417ba8fc84690b565d745aa7c8
+      internalID: 1376754699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo2caminando_19
+      rect:
+        serializedVersion: 2
+        x: 4270
+        y: 102
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aab34e73667058649a5d82a98ead21af
+      internalID: -851361839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo2caminando_20
+      rect:
+        serializedVersion: 2
+        x: 4272
+        y: 77
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 451d56497c6a00b4f99ddfbc52facb6e
+      internalID: 1853480317
       vertices: []
       indices: 
       edges: []
@@ -735,35 +567,27 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      enemigo1_23: 976199329
-      enemigo1_28: 286662948
-      enemigo1_1: -1755506078
-      enemigo1_3: 2092154149
-      enemigo1_0: 918954529
-      enemigo1_13: 1365762537
-      enemigo1_14: 1640312993
-      enemigo1_2: 1616288545
-      enemigo1_18: 1117342082
-      enemigo1_26: 2065980268
-      enemigo1_4: -765915545
-      enemigo1_24: -1607504373
-      enemigo1_25: 897526990
-      enemigo1_5: 660671748
-      enemigo1_20: -1388923191
-      enemigo1_6: -550537090
-      enemigo1_8: 89088123
-      enemigo1_10: -1782034821
-      enemigo1_15: 1431158126
-      enemigo1_9: 79116332
-      enemigo1_7: -1655601654
-      enemigo1_27: -1785121371
-      enemigo1_22: -1092379021
-      enemigo1_12: 668387683
-      enemigo1_17: 1765260959
-      enemigo1_19: -831219250
-      enemigo1_11: -121762408
-      enemigo1_16: 1167099175
-      enemigo1_21: -1657337081
+      enemigo2caminando_13: -347129942
+      enemigo2caminando_19: -851361839
+      enemigo2caminando_16: 1922948950
+      enemigo2caminando_1: -68675550
+      enemigo2caminando_14: 1355145565
+      enemigo2caminando_9: 229240801
+      enemigo2caminando_5: 1243706974
+      enemigo2caminando_7: -1792487095
+      enemigo2caminando_11: 1211790112
+      enemigo2caminando_4: 359744814
+      enemigo2caminando_2: -601388999
+      enemigo2caminando_10: -824386715
+      enemigo2caminando_17: -1667191922
+      enemigo2caminando_6: 178193990
+      enemigo2caminando_18: 1376754699
+      enemigo2caminando_20: 1853480317
+      enemigo2caminando_8: 1160099563
+      enemigo2caminando_12: 1080162493
+      enemigo2caminando_3: -1728540496
+      enemigo2caminando_0: 899194721
+      enemigo2caminando_15: -1131991993
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

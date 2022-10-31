@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9ef38c0420587b642af5ac20125f629d
+guid: dea76af736c6adc43b860c922b01d147
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 80
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -116,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 11479_0
+      name: SPRITESHEET_SUKI_CAMIANDO-COLOR_0
       rect:
         serializedVersion: 2
-        x: 11
-        y: 14
-        width: 39
-        height: 62
+        x: 96
+        y: 49
+        width: 111
+        height: 212
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fb18598016c3a424bb3274120b4f3928
-      internalID: 1054818157
+      spriteID: 43b6407bda648ba4f92f328eb2f8f17f
+      internalID: 186542921
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 11479_1
+      name: SPRITESHEET_SUKI_CAMIANDO-COLOR_1
       rect:
         serializedVersion: 2
-        x: 47
-        y: 60
-        width: 6
-        height: 4
+        x: 336
+        y: 50
+        width: 99
+        height: 202
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -151,20 +151,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7fc2a3db5cf62ff44893a907e602dbe5
-      internalID: 759515428
+      spriteID: 324de6372831abd478b159817cad450d
+      internalID: -1741268855
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 11479_2
+      name: SPRITESHEET_SUKI_CAMIANDO-COLOR_2
       rect:
         serializedVersion: 2
-        x: 57
-        y: 13
-        width: 43
-        height: 63
+        x: 603
+        y: 50
+        width: 77
+        height: 211
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -172,20 +172,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 69bb93dbf6068494190f9d69bf69d1ba
-      internalID: -607096121
+      spriteID: d9895946c1064e640acc6a7d00d087ef
+      internalID: 1577644429
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 11479_3
+      name: SPRITESHEET_SUKI_CAMIANDO-COLOR_3
       rect:
         serializedVersion: 2
-        x: 108
-        y: 12
-        width: 30
-        height: 64
+        x: 825
+        y: 46
+        width: 107
+        height: 209
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,20 +193,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a260de613a813a478eef8b6c24cb8fc
-      internalID: 1061710471
+      spriteID: 2aa3293eca579b640a8a98686aa410c2
+      internalID: 283738752
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 11479_4
+      name: SPRITESHEET_SUKI_CAMIANDO-COLOR_4
       rect:
         serializedVersion: 2
-        x: 146
-        y: 12
-        width: 28
-        height: 56
+        x: 1067
+        y: 49
+        width: 104
+        height: 201
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -214,20 +214,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 44577fe895d1a354888653e76193dac5
-      internalID: -693668389
+      spriteID: f2551ffc908488e40a6fe1c359e5d3b9
+      internalID: -291144241
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 11479_5
+      name: SPRITESHEET_SUKI_CAMIANDO-COLOR_5
       rect:
         serializedVersion: 2
-        x: 182
-        y: 11
-        width: 30
-        height: 49
+        x: 1283
+        y: 44
+        width: 99
+        height: 213
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -235,50 +235,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 098db33743a1ec445ab33df7c938416d
-      internalID: 296142561
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 11479_6
-      rect:
-        serializedVersion: 2
-        x: 220
-        y: 12
-        width: 29
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 29bd7d566db7c4e46bab92d743f67466
-      internalID: 623973318
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 11479_7
-      rect:
-        serializedVersion: 2
-        x: 219
-        y: 2
-        width: 40
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: feeec8d475f4b16409190a39559a18c6
-      internalID: 898139953
+      spriteID: fb2b2a98a35c6bf4d8674387f5ae89d1
+      internalID: -513557945
       vertices: []
       indices: 
       edges: []
@@ -294,14 +252,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      11479_2: -607096121
-      11479_0: 1054818157
-      11479_1: 759515428
-      11479_6: 623973318
-      11479_7: 898139953
-      11479_3: 1061710471
-      11479_4: -693668389
-      11479_5: 296142561
+      SPRITESHEET_SUKI_CAMIANDO-COLOR_2: 1577644429
+      SPRITESHEET_SUKI_CAMIANDO-COLOR_1: -1741268855
+      SPRITESHEET_SUKI_CAMIANDO-COLOR_0: 186542921
+      SPRITESHEET_SUKI_CAMIANDO-COLOR_3: 283738752
+      SPRITESHEET_SUKI_CAMIANDO-COLOR_5: -513557945
+      SPRITESHEET_SUKI_CAMIANDO-COLOR_4: -291144241
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
