@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Audio;
+using UnityEngine.SceneManagement;
 
 public class MakoNivel2 : MonoBehaviour
 {
@@ -186,6 +187,7 @@ public class MakoNivel2 : MonoBehaviour
         gameObject.GetComponent <Animator>().SetBool("herida", true);
          if (puntosVidaPlayer <=0) {
             anim.SetTrigger("muerta");
+            CambiarEscenaGameOver();
             //Destroy(gameObject);
         }
 
@@ -195,6 +197,11 @@ public class MakoNivel2 : MonoBehaviour
     void NuevoSonido (GameObject prefab, float duracion = 5f) {
          Destroy (Instantiate(prefab), duracion);
     }
+
+    void CambiarEscenaGameOver()
+     {
+        SceneManager.LoadScene(10);
+     }
 
      
 }

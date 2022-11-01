@@ -6,9 +6,8 @@ using UnityEngine.Audio;
 using UnityEngine.Video;
 using UnityEngine.SceneManagement;
 
-public class PlayerControler : MonoBehaviour
+public class MakoN3 : MonoBehaviour
 {
-
     public Transform PuntoDisparo;  // desde donde sale la bala
     public GameObject Bullet; // img bala
 
@@ -24,27 +23,22 @@ public class PlayerControler : MonoBehaviour
     public int cantEnergia;
     public GameObject[] Barras;
 
-    [HideInInspector] public Animator anim;
-    [HideInInspector] public bool isAttacking = false;
-    public static PlayerControler scriptMako;
+    public Animator anim;
+ /*    public bool isAttacking = false; */
+    //public static MakoNivel3 scriptMako;
 
-    private bool disparando = true;
-
-    
     [Header("Sonidos")]
     public GameObject DisparoSonido;
     public GameObject PUSonido;
     public GameObject SaltoSonido;
     public GameObject[] HeridaSonido;
-    public GameObject PeleaMusica;
 
+   // public Animator transition; 
+   // public float transitionTime = 1f;
 
-    [HideInInspector] public Animator transition; 
-       public float transitionTime = 1f;
-
-    private void Awake() { // para acceder al script desde cualquier parte
+   /* private void Awake() { // para acceder al script desde cualquier parte
         scriptMako = this;
-    }
+    }*/
     
 
  
@@ -57,7 +51,7 @@ public class PlayerControler : MonoBehaviour
        
         
         nivelEnergia.GetComponent<Image>().color = new Color (0, 240, 255 );
-        
+        //energia.GetComponent<Image>().color = new Color (0, 240, 255  );
 
         // BARRITAS DE ENERGIA
     for (int i = 0; i < cantEnergia; i++) {
@@ -81,7 +75,7 @@ public class PlayerControler : MonoBehaviour
         //gameObject.GetComponent <Rigidbody2D>().AddForce(new Vector2(-800f * Time.deltaTime, 0));
         gameObject.GetComponent <Animator>().SetBool("mooving", true);
         gameObject.GetComponent <Animator>().SetBool("shoot", false);
-        gameObject.GetComponent <Animator>().SetBool("fight", false);
+    /*     gameObject.GetComponent <Animator>().SetBool("fight", false); */
         gameObject.GetComponent <Animator>().SetBool("jump", false);
         anim.SetBool("falling", false);
          anim.SetBool("crouch", false);
@@ -89,8 +83,7 @@ public class PlayerControler : MonoBehaviour
        transform.eulerAngles = new Vector3 (0,180, 0); // para voltear al personaje             
     } 
 
-    if (Input.GetKey("a") && Input.GetKey("space") ) 
-    {
+    if (Input.GetKey("a") && Input.GetKey("space") ) {
         gameObject.GetComponent <Animator>().SetBool("jump", true);
     }
    
@@ -101,7 +94,7 @@ public class PlayerControler : MonoBehaviour
        // gameObject.GetComponent <Rigidbody2D>().AddForce(new Vector2(800f * Time.deltaTime, 0));
         gameObject.GetComponent <Animator>().SetBool("mooving", true);
         gameObject.GetComponent <Animator>().SetBool("shoot", false);
-        gameObject.GetComponent <Animator>().SetBool("fight", false);
+      /*   gameObject.GetComponent <Animator>().SetBool("fight", false); */
         gameObject.GetComponent <Animator>().SetBool("jump", false);
         anim.SetBool("falling", false);
         anim.SetBool("crouch", false);
@@ -159,8 +152,6 @@ public class PlayerControler : MonoBehaviour
         anim.SetBool("falling", false);
     }
 
-
-
     if (Input.GetKey(KeyCode.LeftControl)) // agacharse
     {
         anim.SetBool("crouch", true);
@@ -180,43 +171,52 @@ public class PlayerControler : MonoBehaviour
            
     }
 
-    
-    if(Input.GetKey("mouse 0") && disparando ) 
-    {
-        Disparar();
-    
-    } 
 
-    if (Input.GetKey("mouse 0") && !disparando)
-    {
-         Ataque();
-         //NuevoSonido(PeleaSonido, 3f);
-        
-    } 
-
- 
-  /*  if (Input.GetKey("mouse 0")) { //dispara con el mouse
+    if (Input.GetKey("mouse 0")) { //dispara con el mouse
         gameObject.GetComponent <Animator>().SetBool("shoot", true);
-        gameObject.GetComponent <Animator>().SetBool("fight", false);
+     /*    gameObject.GetComponent <Animator>().SetBool("fight", false); */
         anim.SetBool("crouch", false);
       
-    }*/
+    }
    
-    if (Input.GetKeyDown ("mouse 0") && disparando) { //dispara con el mouse
-        if (cantEnergia > 0 ) { 
+    if (Input.GetKeyDown ("mouse 0")) { //dispara con el mouse
+        if (cantEnergia > 0  ) { // && puedoDisparar 
             GameObject prefab = Instantiate(Bullet, PuntoDisparo.position, transform.rotation) as GameObject; // crea objeto en base a la rotacion           
                 cantEnergia -= 1;        
                 NuevoSonido(DisparoSonido, 1f);
-               Destroy(prefab, 1.5f);
-        } 
+               Destroy(prefab, 2f);
+
+               // puedoDisparar = false;
+               // // StartCoroutine(EsoerarDisparo())
+        }  
+
+        // }
         
         Barras [cantEnergia].gameObject.SetActive(false);
        
     }
 
+    /*
+    Profe
+
+    bool puedoDisparar = false;
+
+    EsperarDisparo() {
+        yield return new WaitForSecndos( frecuencia disparo )
+        puedoDisparar = true;
+
+    }
+    
+    */
 
 
-        
+
+   /* if (cantEnergia <=0) { //si no tiene energia, no dispara
+        Destroy(energia);
+       
+    }*/
+
+/*         Ataque(); */
     /*if (Input.GetKeyDown ("mouse 1")) { // con boton derecho del mouse pelea
 
         
@@ -248,27 +248,19 @@ public class PlayerControler : MonoBehaviour
     
     }
 
-     void Disparar() {
-       
-        anim.SetBool("shoot", true);
-    }
-
-
-    void Ataque() {
-        if ( !isAttacking) {
-            disparando = false;
+/*     void Ataque() {
+        if (Input.GetKeyDown ("mouse 1") && !isAttacking) {
             isAttacking = true;
-
-            
-           
         }
-    }
+    } */
+
 
 
 
    private void OnTriggerEnter2D (Collider2D col) { //cuando collider entra en contacto con otro collider
 
-      //JUNTAR BALAS (ENERGIA)
+
+        //JUNTAR BALAS (ENERGIA)
        if (col.gameObject.tag == "balas" && cantEnergia < 8 ) {
               Destroy(col.gameObject);
     
@@ -280,9 +272,9 @@ public class PlayerControler : MonoBehaviour
         Barras [i].gameObject.SetActive(true);
 
     } 
-   
-       } 
 
+    
+       } 
 
        if (col.gameObject.tag == "balas" && cantEnergia == 8) {
         Destroy(col.gameObject);
@@ -291,67 +283,56 @@ public class PlayerControler : MonoBehaviour
               NuevoSonido(PUSonido, 1f);
 
 
-         for (int i = 0; i < cantEnergia; i++) {
+    for (int i = 0; i < cantEnergia; i++) {
         Barras [i].gameObject.SetActive(true);
 
     } 
        }
 
-
-       if (col.gameObject.tag == "MomentoPelea")
-       {                    
-            disparando = false;
-            
-                      
-       }    
-
-       if (col.gameObject.tag == "Musica") 
-       {
-         NuevoSonido(PeleaMusica, 60f);
-       }
-
-     
+       
     }
 
     private void OnCollisionEnter2D (Collision2D collision) { // verificar q colisionamos con la plataforma cuando se mueve
-        if (collision.gameObject.tag == "plataformaMovible") {
+/*         if (collision.gameObject.tag == "plataformaMovible") {
             transform.parent = collision.transform;
             anim.SetBool("falling", false);
             
 
-        }
-     if (collision.gameObject.tag == "balaEnemigo" ) { // animacion de daño
+        } */
+     if (collision.gameObject.tag == "balaEnemigo" ) { // animacion de dano
         anim.SetTrigger ("hurt");
+            if (puntosVidaPlayer <=0) {
+
+         CambiarEscenaGameOver();
+
+
+    }
         
     }
 
-    
-        
 
     }
 
-    private void OnCollisionExit2D (Collision2D collision) { // q el personaje ya no se mueva con la plataforma cuando ya se bajo
+/*     private void OnCollisionExit2D (Collision2D collision) { // q el personaje ya no se mueva con la plataforma cuando ya se bajo
         if (collision.gameObject.tag == "plataformaMovible") {
             transform.parent = null;
 
         }
-    }
+    } */
 
 
-    public void TakeHit (float golpe) { // daño de enemigos
+    public void TakeHit (float golpe) { // personaje pierde vida
         puntosVidaPlayer -= golpe;
        NuevoSonido(HeridaSonido[0], 1f);
         gameObject.GetComponent <Animator>().SetBool("hurt", true);
          if (puntosVidaPlayer <=0) {
-            anim.SetTrigger("dead");
-            CambiarEscenaGameOver();
-            //Destroy(gameObject);
+             CambiarEscenaGameOver();
         }
 
 
     }
-
-    public void golpeSuki (float dano) { // daño de suki
+/* 
+    public void golpeSuki (float dano) { // dano de suki
         puntosVidaPlayer -= dano;
          gameObject.GetComponent <Animator>().SetBool("hurt", true);
         NuevoSonido(HeridaSonido[Random.Range(0, 2)], 1f);
@@ -366,7 +347,7 @@ public class PlayerControler : MonoBehaviour
         }*/
         
 
-    }
+/* 
 
     }
 
@@ -377,21 +358,14 @@ public class PlayerControler : MonoBehaviour
       
     }
 
+
+    }
+    */
      void CambiarEscenaGameOver()
      {
         SceneManager.LoadScene(9);
      }
-
-    
-
     void NuevoSonido (GameObject prefab, float duracion = 5f) {
          Destroy (Instantiate(prefab), duracion);
-    }
-
-
-
-
-    }
-    
-
-
+    }  
+}
